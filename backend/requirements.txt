@@ -1,0 +1,46 @@
+# Web 框架
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+
+# 数据库
+sqlalchemy>=2.0.0
+alembic>=1.13.0
+psycopg2-binary>=2.9.9
+
+# 配置 / 校验
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+
+# 认证
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+bcrypt>=4.0.1,<5.0.0  # passlib 1.7.4 不兼容 bcrypt 5.x
+
+# 文件上传
+python-multipart>=0.0.9
+
+# 文档处理
+python-docx>=1.1.0
+mammoth>=1.6.0
+
+# AI SDK（通过 adapters/ 层调用，不直接在业务代码 import）
+dashscope>=1.20.0
+openai>=1.30.0
+
+# 加密（API Key 存储）
+cryptography>=42.0.0
+
+# 限流
+slowapi>=0.1.9
+
+# HTTP 客户端（测试 / 内部调用）
+httpx>=0.27.0
+
+# 测试
+pytest>=8.2.0
+pytest-asyncio>=0.23.0
+pytest-cov>=5.0.0
+
+# 代码质量
+mypy>=1.10.0
+ruff>=0.4.0

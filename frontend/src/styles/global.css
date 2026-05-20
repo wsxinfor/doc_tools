@@ -1,0 +1,129 @@
+@import './variables.css';
+
+/* 使用 Ant Design 的 reset CSS */
+@import 'antd/dist/reset.css';
+
+/* 全局样式重置 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  background-color: var(--color-page-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+}
+
+/* 链接样式 */
+a {
+  color: var(--color-btn-bg);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 按钮基础样式覆盖 */
+.ant-btn {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  border-radius: var(--radius-xs);
+}
+
+.ant-btn-primary {
+  background: var(--color-btn-bg);
+  border-color: var(--color-btn-bg);
+}
+
+.ant-btn-primary:hover {
+  background: var(--color-btn-hover);
+  border-color: var(--color-btn-hover);
+}
+
+/* 输入框样式 */
+.ant-input, .ant-input-affix-wrapper {
+  font-size: 13px;
+  border-radius: var(--radius-xs);
+  border-color: var(--color-input-border);
+}
+
+.ant-input:focus, .ant-input-affix-wrapper:focus {
+  border-color: var(--color-input-focus);
+  box-shadow: 0 0 0 1px var(--color-input-focus) inset;
+}
+
+/* 卡片样式 */
+.ant-card {
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--color-border);
+}
+
+/* 表格样式 */
+.ant-table {
+  font-size: 13px;
+}
+
+.ant-table-thead > tr > th {
+  background: var(--color-badge-bg);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* 选择器 */
+.ant-select-selector {
+  border-radius: var(--radius-xs);
+}
+
+/*  Tabs */
+.ant-tabs-tab {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+
+/* 步骤条 */
+.ant-steps-item-title {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* 徽章 */
+.ant-badge-count {
+  background: var(--color-chart-accent);
+}
+
+/* 禁用 box-shadow（层次靠边框和背景色差异） */
+.ant-card, .ant-btn, .ant-input, .ant-select-selector {
+  box-shadow: none !important;
+}
+
+/* 滚动条样式（细线风格） */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-page-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-sidebar-muted);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sidebar-section);
+}

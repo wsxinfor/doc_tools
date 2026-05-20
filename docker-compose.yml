@@ -1,0 +1,52 @@
+services:
+  db:
+    image: postgres:15
+    container_name: docformat_db
+    environment:
+      POSTGRES_DB: docformat
+      POSTGRES_USER: docformat_user
+      POSTGRES_PASSWORD: docformat_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - docformat_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U docformat_user -d docformat"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: docformat_backend
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: postgresql://docformat_user:docformat_pass@db:5432/docformat
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./storage:/app/storage
+    depends_on:
+      db:
+        condition: service_healthy
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: docformat_frontend
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  docformat_pgdata:
+
+networks:
+  default:
+    name: docformat_network

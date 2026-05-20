@@ -1,0 +1,85 @@
+/* 模板管理页 */
+.templates-page {
+  max-width: 1400px;
+}
+
+.templates-page .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.templates-page .page-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+/* 模板卡片网格 */
+.templates-grid {
+  margin: 0;
+}
+
+.template-card {
+  border-radius: var(--radius-md);
+  border: 0.5px solid var(--color-border);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.template-card:hover {
+  border-color: var(--color-sidebar-bg);
+}
+
+.template-card .ant-card-head {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  border-bottom: 0.5px solid var(--color-border);
+  padding: 12px 16px;
+}
+
+.template-card .ant-card-body {
+  padding: 12px 16px;
+}
+
+.template-description {
+  font-size: 12px;
+  display: block;
+}
+
+.template-date {
+  margin-top: 8px;
+}
+
+.template-date-text {
+  font-size: 11px;
+}
+
+.template-tag {
+  font-size: 10px;
+}
+
+.template-card .ant-card-actions {
+  border-top: 0.5px solid var(--color-border);
+}
+
+.template-card .ant-card-actions li {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+/* 空状态 */
+.templates-empty {
+  padding: 60px 0;
+}
+
+/* 响应式 */
+@media (max-width: 576px) {
+  .templates-page .page-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}

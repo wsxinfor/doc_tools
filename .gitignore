@@ -1,0 +1,68 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# ===== 环境变量（严禁提交）=====
+.env
+.env.local
+.env.*.local
+
+# ===== Node / 前端 =====
+node_modules/
+frontend/dist/
+frontend/build/
+*.tsbuildinfo
+
+# ===== 存储文件（运行时生成）=====
+storage/uploads/
+storage/outputs/
+storage/images/
+backend/storage/uploads/
+backend/storage/outputs/
+backend/storage/images/
+backend/storage/media
+backend/storage/*.png
+backend/storage/*.jpg
+backend/storage/*.jpeg
+
+# ===== Linux venv（WSL2）=====
+backend/.venv_linux/
+
+# ===== Claude Code 工作目录 =====
+.claude/
+
+# ===== 日志文件 =====
+backend/logs/
+frontend/logs/
+
+# ===== IDE =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Alembic 编译缓存 =====
+alembic/__pycache__/
+
+# ===== 测试产物 =====
+playwright-report/
+test-results/

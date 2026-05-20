@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<style>
+  body { font-family: serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+  h1, h2, h3, h4 { font-weight: bold; }
+  h1 { font-size: 1.8em; page-break-before: always; }
+  h2 { font-size: 1.5em; page-break-before: always; }
+  h3 { font-size: 1.2em; }
+  p { text-indent: 2em; }
+  table { border-collapse: collapse; width: 100%; }
+  td, th { border: 1px solid #ccc; padding: 6px; }
+  th { background: #4472C4; color: #fff; }
+</style>
+</head>
+<body>
+<p>北京中科进出口有限责任公司</p><p>关于AI和周易</p><p>北京昱华源码科技有限公司</p><p>2026年04月15日</p><p>v1.0</p><p>目  录</p><p>▶ **一、安装（1 条命令）**</p><p>▶ **macOS / Linux**</p><p>▶ **安装过程中：**</p><p>1. **是否从 OpenClaw 迁移数据** → 选 `是`（如果有）</p><p>2. **配置大模型** → 按向导选择（推荐 MiniMax 或 Claude）</p><p>3. **配置聊天工具** → 可选飞书/微信/Telegram 等</p><p>---</p><p>▶ **二、启动与关闭**</p><p>▶ **启动**</p><p>▶ **关闭**</p><p>- 终端中按 `Ctrl + C`</p><p>- 或输入 `/exit`</p><p>---</p><p>**三、常用命令**</p><p>**基础命令**</p><p>- 命令: `/help`</p><p>说明: 查看所有可用命令</p><p>- 命令: `/new` 或 `/reset`</p><p>说明: 重置会话，开始新对话</p><p>- 命令: `/title &lt;名字&gt;`</p><p>说明: 给当前会话命名（便于后续恢复）</p><p>- 命令: `/resume &lt;名字&gt;`</p><p>说明: 恢复到之前命名的会话</p><p>- 命令: `/exit`</p><p>说明: 退出 Hermes</p><p>**效率命令**</p><p>- 命令: `/yolo` | 说明: 开启懒人模式，自动批准所有操作 | 注意事项: ⚠️ 生产环境慎用</p><p>- 命令: `/approve` | 说明: 手动批准当前操作 | 注意事项: 默认安全模式</p><p>- 命令: `/personality &lt;风格&gt;` | 说明: 切换聊天风格 | 注意事项: 见下方风格列表</p><p>**聊天风格（14 种）**</p><p>**查询命令**</p><p>- 命令: `/skills`</p><p>说明: 查看已加载的技能</p><p>- 命令: `/memory`</p><p>说明: 查看当前记忆</p><p>- 命令: `/session`</p><p>说明: 查看会话信息</p><p>- 命令: `/config`</p><p>说明: 查看当前配置</p><p>---</p><p>▶ **四、配置飞书机器人（可选）**</p><p>▶ **1. 进入设置**</p><p>▶ **2. 选择飞书，填写信息**</p><p>- **App ID**：从飞书开放平台获取</p><p>- **App Secret**：从飞书开放平台获取</p><p>- **Domain**：选择 `feishu`</p><p>- **连接模式**：选择 `WebSocket`</p><p>**3. 配对**</p><p>1. 在飞书给 Bot 发第一条消息</p><p>2. 复制 Bot 回复中的配对命令</p><p>3. 在终端运行该命令</p><p>4. 完成配对 ✅</p><p>---</p><p>▶ **五、日常使用示例**</p><p>▶ **发邮件**</p><p>▶ **查资料**</p><p>▶ **写代码**</p><p>▶ **记笔记**</p><p>▶ **查历史**</p><p>---</p><p>▶ **六、常见问题**</p><p>▶ **Q1：命令卡住了怎么办？**</p><p>▶ **Q2：想换个模型？**</p><p>▶ **Q3：如何查看之前的会话？**</p><p>▶ **Q4：YOLO 模式怎么关？**</p><p>▶ **Q5：技能不够用？**</p><p>---</p><p>**七、最佳实践**</p><p>**✅ 建议**</p><p>1. **重要会话先命名**：`/title 项目名`，方便后续恢复</p><p>2. **复杂任务分步说**：一次说清楚一个步骤</p><p>3. **定期清理记忆**：避免记忆膨胀影响性能</p><p>4. **生产环境别开 YOLO**：敏感操作保持审批</p><p>**❌ 避免**</p><p>1. 不要在 YOLO 模式下运行 `rm -rf` 类命令</p><p>2. 不要同时开太多会话线程</p><p>3. 不要把敏感信息（密码、密钥）直接告诉 Agent</p><p>---</p><p>**八、进阶资源**</p><p>- 资源: `/help`</p><p>说明: 内置帮助文档</p><p>- 资源: `~/.hermes/skills/`</p><p>说明: 自定义技能目录</p><p>- 资源: `~/.hermes/MEMORY.md`</p><p>说明: Agent 记忆文件</p><p>- 资源: `~/.hermes/USER.md`</p><p>说明: 用户画像文件</p><p>- 资源: [官方文档](https://github.com/NousResearch/hermes-agent)</p><p>说明: GitHub 仓库</p><p>---</p><p>**九、一句话总结**</p><p>&gt; **OpenClaw 教会我们 Agent 是可以被配置的，Hermes 告诉我们 Agent 是可以自己长大的。**</p><p>---</p><p>🦞 有问题随时问 Hermes 自己，它比文档更懂你！</p><p>---</p><p>**最后更新**：2026-04-16</p><p>**适用版本**：Hermes Agent v0.9+</p>
+</body>
+</html>

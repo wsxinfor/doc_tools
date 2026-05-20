@@ -1,0 +1,116 @@
+/* 登录页布局 */
+.login-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 左侧品牌区 */
+.login-brand {
+  width: 43%;
+  background: var(--color-sidebar-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  color: var(--color-sidebar-text);
+}
+
+.brand-logo {
+  width: 80px;
+  height: 80px;
+  color: var(--color-sidebar-muted);
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  color: var(--color-sidebar-text);
+  margin: 0;
+}
+
+.brand-sub {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  color: var(--color-sidebar-muted);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+/* 右侧表单区 */
+.login-form-area {
+  flex: 1;
+  background: var(--color-page-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 4rem;
+  min-width: 400px;
+}
+
+.form-title {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  letter-spacing: 0.06em;
+  margin-bottom: 2rem;
+}
+
+/* 登录表单输入框 */
+.login-form-area .ant-form-item {
+  margin-bottom: 1.5rem;
+}
+
+.login-input .ant-input {
+  border: none;
+  border-bottom: 1px solid var(--color-input-border);
+  border-radius: 0;
+  background: transparent;
+  padding: 10px 0;
+  font-size: 14px;
+  transition: border-color 0.15s;
+}
+
+.login-input .ant-input:focus {
+  border-bottom-color: var(--color-input-focus);
+  box-shadow: none;
+}
+
+.login-input .ant-input-prefix {
+  color: var(--color-text-tertiary);
+  margin-right: 8px;
+}
+
+.login-input .ant-input::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+/* 登录按钮 */
+.btn-login {
+  margin-top: 1rem;
+  padding: 12px;
+  background: var(--color-btn-bg);
+  border: none;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  border-radius: var(--radius-xs);
+  transition: background 0.15s;
+}
+
+.btn-login:hover {
+  background: var(--color-btn-hover);
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .login-brand {
+    display: none;
+  }
+
+  .login-form-area {
+    padding: 2rem;
+    min-width: auto;
+  }
+}

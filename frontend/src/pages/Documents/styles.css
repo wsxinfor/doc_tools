@@ -1,0 +1,103 @@
+/* 文档管理页 */
+.documents-page {
+  max-width: 1400px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+/* 上传拖拽区 */
+.upload-dragger {
+  margin-top: 16px;
+}
+
+.upload-dragger .ant-upload {
+  padding: 40px 24px;
+}
+
+.upload-dragger .ant-upload-drag-icon {
+  color: var(--color-sidebar-bg);
+}
+
+.upload-dragger .ant-upload-text {
+  font-size: 14px;
+  color: var(--color-text-primary);
+}
+
+.upload-dragger .ant-upload-hint {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+/* 上传 Modal */
+.upload-modal .ant-modal-content {
+  border-radius: var(--radius-md);
+}
+
+.upload-modal .ant-tabs-tab {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+
+/* 文本输入区 */
+.upload-modal .ant-input {
+  border-radius: var(--radius-xs);
+}
+
+.upload-modal .ant-input-textarea {
+  border-radius: var(--radius-xs);
+}
+
+/* 表格样式 */
+.documents-page .ant-table {
+  background: var(--color-card-bg);
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.documents-page .ant-table-thead > tr > th {
+  background: var(--color-badge-bg);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--color-text-primary);
+}
+
+.documents-page .ant-table-tbody > tr > td {
+  font-size: 13px;
+  color: var(--color-text-primary);
+}
+
+.documents-page .ant-table-tbody > tr:hover > td {
+  background: var(--color-page-bg);
+}
+
+/* 操作按钮 */
+.documents-page .ant-btn-link {
+  font-size: 12px;
+  padding: 0 4px;
+}
+
+/* 空状态 */
+.documents-page .ant-empty {
+  padding: 40px 0;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}

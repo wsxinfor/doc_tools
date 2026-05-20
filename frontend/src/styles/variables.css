@@ -1,0 +1,70 @@
+:root {
+  /* 主色 - 方案 A 烟灰·霜白 */
+  --color-sidebar-bg:      #4a5568;
+  --color-sidebar-text:    #edf2f7;
+  --color-sidebar-muted:   #a0aec0;
+  --color-sidebar-section: #3a4555;
+  --color-sidebar-hover:   #5a6578;
+  --color-sidebar-active-bg:    #5a6578;
+  --color-sidebar-active-text:  #edf2f7;
+  --color-sidebar-active-line:  #68d391;   /* 薄荷绿 active 指示线 */
+
+  /* 页面 */
+  --color-page-bg:         #f7f8fa;
+  --color-surface:         #ffffff;
+  --color-topbar-bg:       #ffffff;
+  --color-topbar-border:   #e2e8f0;
+
+  /* 文字 */
+  --color-text-primary:    #2d3748;
+  --color-text-secondary:  #718096;
+  --color-text-tertiary:   #a0aec0;
+  --color-text-inverse:    #edf2f7;
+
+  /* 边框 */
+  --color-border:          #e2e8f0;
+  --color-border-strong:   #cbd5e0;
+
+  /* 卡片/输入 */
+  --color-card-bg:         #ffffff;
+  --color-input-border:    #cbd5e0;
+  --color-input-focus:     #4a5568;
+  --color-badge-bg:        #edf2f7;
+  --color-badge-text:      #4a5568;
+
+  /* 图表 */
+  --color-chart-primary:   #4a5568;
+  --color-chart-track:     #edf2f7;
+  --color-chart-accent:    #68d391;
+
+  /* 按钮 */
+  --color-btn-bg:          #4a5568;
+  --color-btn-text:        #edf2f7;
+  --color-btn-hover:       #5a6578;
+
+  /* 字体 */
+  --font-sans:    'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  --font-mono:    'JetBrains Mono', 'Fira Code', monospace;
+  --font-display: 'Noto Serif SC', 'STSong', serif;
+
+  /* 圆角：极小，体现线条感 */
+  --radius-xs: 2px;
+  --radius-sm: 3px;
+  --radius-md: 4px;
+
+  /* 间距（8px 基准） */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+
+  /* 侧栏 */
+  --sidebar-width: 200px;
+
+  /* TopBar */
+  --topbar-height: 48px;
+}

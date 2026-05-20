@@ -1,0 +1,19 @@
+services:
+  db:
+    image: postgres:15
+    container_name: docformat_db
+    environment:
+      POSTGRES_DB: docformat
+      POSTGRES_USER: docformat_user
+      POSTGRES_PASSWORD: docformat_pass
+    ports:
+      - "5433:5432"
+    volumes:
+      - docformat_pgdata:/var/lib/postgresql/data
+
+volumes:
+  docformat_pgdata:
+
+networks:
+  default:
+    name: docformat_network
